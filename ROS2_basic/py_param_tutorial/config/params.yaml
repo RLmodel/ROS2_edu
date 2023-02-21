@@ -1,0 +1,8 @@
+param_example:
+  ros__parameters:
+    string_param: "Yaml Yaml"
+    int_param: 5
+    float_param: 3.14
+    arr_param: ['I', 'love', 'ROS 2']
+    nested_param:
+      string_param: "Ooh Wee"

@@ -1,0 +1,21 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/byb76/add_ros2_ws/build/py_topic_tutorial",
+        "/home/byb76/add_ros2_ws/install/py_topic_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/build/py_service_tutorial",
+        "/home/byb76/add_ros2_ws/install/py_service_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/py_param_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/build/py_node_tutorial",
+        "/home/byb76/add_ros2_ws/install/py_node_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/py_cv_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/py_action_tutorial/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/build/my_turtlesim_pkg",
+        "/home/byb76/add_ros2_ws/install/my_turtlesim_pkg/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/build/my_first_pkg",
+        "/home/byb76/add_ros2_ws/install/my_first_pkg/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/fusionbot_description/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/custom_interfaces/lib/python3.8/site-packages",
+        "/home/byb76/add_ros2_ws/install/add_interface/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
