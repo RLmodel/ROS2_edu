@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rlmodel/ros2_ws/install/ros_ign_interfaces/include/**",
+        "/home/rlmodel/ros2_ws/install/ros_ign_bridge/include/**",
+        "/home/rlmodel/ros2_ws/install/realsense2_camera/include/**",
+        "/home/rlmodel/ros2_ws/install/realsense2_camera_msgs/include/**",
+        "/home/rlmodel/ros2_ws/install/openslam_gmapping/include/**",
+        "/home/rlmodel/ros2_ws/install/custom_interfaces/include/**",
+        "/home/rlmodel/rlmodel/install/rplidar_ros/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/mw_ahrsv1_ros2/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/rf2o_laser_odometry/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/src_odometry/include/**",
+        "/home/rlmodel/ros2_ws/src/ROS2_edu/RLC/src_odometry/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
