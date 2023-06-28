@@ -1,7 +1,7 @@
 # Basic ROS 2 program to publish real-time streaming 
 # video from your built-in webcam
 # Author:
-# - ybbaek
+# - RLmodel ybbaek
 # - https://github.com/rlmodel
   
 # Import the necessary libraries
