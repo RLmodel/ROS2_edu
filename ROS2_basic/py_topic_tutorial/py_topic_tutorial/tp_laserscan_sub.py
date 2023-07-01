@@ -80,43 +80,6 @@ class ScanSubNode(Node):
         # linear_velocity : {msg.linear_velocity} / angular_velocity : {msg.angular_velocity }""")
 
 
-class ScanSubNode2 (Node):
-    """turtlesim/Pose msg Subscriber Node.
-
-    This node will listen pose topic from turtlesim.
-    Then just print them on terminal.
-    """
-
-    def __init__(self):
-        """Node Initialization.
-
-        You must type name of the node in inheritanced initializer.
-        """
-        super().__init__('scan_sub_node')
-
-        queue_size = 10  # Queue Size
-        # You can create subscriber with create_subscription function
-        # this function get those params
-        #
-        # msg type, topic name, callback function, queue_size
-        #
-        # topic name must exists and coincident with exact topic name
-        self.pose_subscriber = self.create_subscription(
-            LaserScan, 'scan', self.sub_callback, queue_size
-        )
-
-    def sub_callback(self, msg):
-        """Timer will run this function periodically."""
-        self.get_logger().info(f' \
-            \nmsg.ranges[0] : {msg.ranges[0]} \
-            \nmsg.ranges[10] : {msg.ranges[10]} \
-            \nmsg.ranges[20] : {msg.ranges[20]} \
-            \nmsg.ranges[30] : {msg.ranges[30]} \
-            \nmsg.ranges[40] : {msg.ranges[40]} \
-        ')
-        # self.get_logger().info(f"""x : {msg.x:.3f} / y : {msg.y:.3f} / theta : {msg.theta:.3f}
-        # linear_velocity : {msg.linear_velocity} / angular_velocity : {msg.angular_velocity }""")
-
 
 def main(args=None):
     """Do enter into this main function first."""
