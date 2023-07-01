@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'first_pub = py_strpubsub.strpub_node:main',
+            'first_sub = py_strpubsub.strsub_node:main'
         ],
     },
 )
