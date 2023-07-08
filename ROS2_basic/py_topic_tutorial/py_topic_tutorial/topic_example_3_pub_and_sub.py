@@ -35,10 +35,10 @@ class ParkingNode(Node):
     def sub_callback(self, msg):
 
         twist_msg = Twist()
-        distance_forward = msg.ranges[60]
-        print('distance ', distance_forward)
+        distance_forward = msg.ranges[350]
+        print('scan size ', len(msg.ranges))
 
-        if distance_forward > 0.5:
+        if distance_forward > 0.7:
             self.get_logger().info(f'Distance from Front Object : {distance_forward}')
             twist_msg.linear.x = 0.5
             self.twist_publisher.publish(twist_msg)
