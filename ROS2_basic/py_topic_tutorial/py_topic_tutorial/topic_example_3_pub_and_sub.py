@@ -27,15 +27,16 @@ class ParkingNode(Node):
         super().__init__('parking_node')
         queue_size = 10  # Queue Size
 
-        self.twist_publisher = self.create_publisher(Twist, 'cmd_vel', queue_size)
+        self.twist_publisher = self.create_publisher(Twist, '/diffbot/cmd_vel', queue_size)
         self.scan_subscriber = self.create_subscription(
-            LaserScan, 'scan', self.sub_callback, queue_size
+            LaserScan, '/diffbot/scan', self.sub_callback, queue_size
         )
 
     def sub_callback(self, msg):
 
         twist_msg = Twist()
         distance_forward = msg.ranges[60]
+        print('distance ', distance_forward)
 
         if distance_forward > 0.5:
             self.get_logger().info(f'Distance from Front Object : {distance_forward}')
