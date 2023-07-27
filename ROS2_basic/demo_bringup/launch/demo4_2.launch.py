@@ -9,6 +9,7 @@ def generate_launch_description():
     ld = LaunchDescription()
 
     demo_launch_file = IncludeLaunchDescription(
+        #PythonLaunchDescriptionSource(
         XMLLaunchDescriptionSource(
             os.path.join(get_package_share_directory('demo_bringup'),
                          'launch/demoxml1.launch.xml')
