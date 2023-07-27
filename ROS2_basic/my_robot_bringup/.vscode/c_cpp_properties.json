@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/foxy/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/mw_ahrsv1_ros2/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/rf2o_laser_odometry/include/**",
+        "/home/rlmodel/ros2_ws/src/RLCar/RLCar-ROS2/src_odometry/include/**",
+        "/home/rlmodel/ros2_ws/src/rlcar_gazebo/rlcar_gazebo_odometry/include/**",
+        "/home/rlmodel/ros2_ws/src/rplidar_ros/include/**",
+        "/home/rlmodel/ros2_ws/src/scout_ros2/scout_base/include/**",
+        "/home/rlmodel/ros2_ws/src/slam_gmapping/openslam_gmapping/include/**",
+        "/home/rlmodel/ros2_ws/src/slam_gmapping/slam_gmapping/include/**",
+        "/home/rlmodel/ros2_ws/src/ugv_sdk/include/**",
+        "/home/rlmodel/ros2_ws/src/utils/DynamixelSDK/dynamixel_sdk/include/**",
+        "/home/rlmodel/ros2_ws/src/utils/DynamixelSDK/dynamixel_sdk_examples/include/**",
+        "/home/rlmodel/ros2_ws/src/utils/hls_lfcd_lds_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
