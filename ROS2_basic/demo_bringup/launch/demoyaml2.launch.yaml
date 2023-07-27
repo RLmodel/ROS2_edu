@@ -1,0 +1,15 @@
+launch:
+
+- node:
+    pkg: "turtlesim"
+    exec: "turtlesim_node"
+    param:
+    -
+        name: "background_r"
+        value: 220
+    -
+        name: "background_g"
+        value: 220
+    -
+        name: "background_b"
+        value: 220

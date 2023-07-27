@@ -1,0 +1,24 @@
+launch:
+
+- node:
+    pkg: "turtlesim"
+    exec: "turtlesim_node"
+    name: "toy_turtle"
+    remap:
+    -
+        from: "/turtle1/cmd_vel"
+        to: "/cmd_vel"
+    -
+        from: "/clear"
+        to: "/empty"
+
+    param:
+    -
+        name: "background_r"
+        value: 220
+    -
+        name: "background_g"
+        value: 220
+    -
+        name: "background_b"
+        value: 220
