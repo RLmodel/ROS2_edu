@@ -1,6 +1,7 @@
 <launch>
     <node pkg="turtlesim" exec="turtlesim_node" name="demo_turtle">
         <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+        <remap from="/clear" to="/empty" />
         <param name="background_r" value="220"/>
         <param name="background_g" value="220"/>
         <param name="background_b" value="220"/>
