@@ -1,5 +1,5 @@
 launch:
 
 - include:
-    #file: "$(find-pkg-share demo_bringup)/launch/demoyaml1.launch.yaml"
+    file: "$(find-pkg-share demo_bringup)/launch/demoyaml3.launch.yaml"
     file: "$(find-pkg-share demo_bringup)/launch/demopy1.launch.py"
