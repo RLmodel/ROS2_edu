@@ -16,11 +16,11 @@ class ScanSub(Node):
         )
 
     def listener_callback(self, msg):
-        len0_left = format(msg.ranges[0], '.2f')
-        len720_right = format(msg.ranges[719], '.2f')
-        len360_front = format(msg.ranges[359], '.2f')
-        self.get_logger().info(f'{len0_left} {len720_right}  {len360_front}')
-        self.get_logger().info("Left Right Front")
+        index0_right = format(msg.ranges[0], '.2f')
+        index719_left = format(msg.ranges[719], '.2f')
+        index359_front = format(msg.ranges[359], '.2f')
+        self.get_logger().info(f'{index0_right} {index719_left}  {index359_front}')
+        self.get_logger().info("Right Left Front")
 
 def main(args=None):
     rclpy.init(args=args)
