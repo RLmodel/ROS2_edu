@@ -14,10 +14,10 @@ class ParkingNode(Node):
     def __init__(self):
         super().__init__('parking_node')
 
-        self.publisher = self.create_publisher(Twist, 'diffbot/cmd_vel', 10)
+        self.publisher = self.create_publisher(Twist, '/diffbot/cmd_vel', 10)
 
         self.subscriber = self.create_subscription(
-            LaserScan, 'diffbot/scan', self.sub_callback, 10
+            LaserScan, '/diffbot/scan', self.sub_callback, 10
         )
         self.subscriber  # prevent unused variable warning
         self.publisher  # prevent unused variable warning
@@ -26,10 +26,10 @@ class ParkingNode(Node):
 
     def sub_callback(self, msg):
         twist_msg = Twist()
-        distance_forward = msg.ranges[360]
+        len_front = msg.ranges[359]
 
-        if distance_forward > 0.5:
-            self.get_logger().info(f'Distance from Front Object : {distance_forward}')
+        if len_front > 0.5:
+            self.get_logger().info(f'Distance from Front Object : {len_front}')
             twist_msg.linear.x = 0.5
             self.publisher.publish(twist_msg)
         else:
