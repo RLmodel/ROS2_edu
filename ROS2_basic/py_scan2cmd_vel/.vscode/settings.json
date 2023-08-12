@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rlmodel/ros2_ws/build/py_scan2cmdvel",
+        "/home/rlmodel/ros2_ws/install/py_scan2cmdvel/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_scan2cmd",
+        "/home/rlmodel/ros2_ws/install/py_scan2cmd/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/my_robot_bringup",
+        "/home/rlmodel/ros2_ws/install/my_robot_bringup/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/isense",
+        "/home/rlmodel/ros2_ws/install/isense/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rlmodel/ros2_ws/build/py_scan2cmdvel",
+        "/home/rlmodel/ros2_ws/install/py_scan2cmdvel/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_scan2cmd",
+        "/home/rlmodel/ros2_ws/install/py_scan2cmd/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/my_robot_bringup",
+        "/home/rlmodel/ros2_ws/install/my_robot_bringup/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/isense",
+        "/home/rlmodel/ros2_ws/install/isense/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
