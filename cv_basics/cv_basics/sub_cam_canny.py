@@ -45,7 +45,9 @@ class ImageSubscriber(Node):
     current_frame = self.br.imgmsg_to_cv2(data)
     
     # Display image
-    cv2.imshow("camera", current_frame)
+    gray = cv2.cvtColor(current_frame,1)
+    edge = cv2.Canny(gray, 0, 300)
+    cv2.imshow("camera", edge)
     
     cv2.waitKey(1)
   
