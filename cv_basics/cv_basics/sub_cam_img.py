@@ -26,7 +26,7 @@ class ImageSubscriber(Node):
     # from the video_frames topic. The queue size is 10 messages.
     self.subscription = self.create_subscription(
       Image, 
-      '/camera/depth/image_rect_raw', 
+      'video_frames', #/camera/depth/image_rect_raw > check for depth image topic
       self.listener_callback, 
       10)
     self.subscription # prevent unused variable warning
