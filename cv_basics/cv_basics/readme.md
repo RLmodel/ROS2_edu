@@ -1,3 +1,3 @@
-#OpenCV basic
+# OpenCV basic
 - simple vision examples
-- ROS2 img pub/sub code
+- ROS2 img pub/sub codes
