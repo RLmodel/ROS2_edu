@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'img_publisher = cv_basics.pub_cam_img:main',
             'img_subscriber = cv_basics.sub_cam_img:main',
+            'img_canny = cv_basics.sub_cam_canny:main'
         ],
     },
 )
