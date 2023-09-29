@@ -18,7 +18,7 @@ class getpose(Node):
                 "/ position Y: ","{:.2f}".format(msg.pose.pose.position.y),
                 "/ orientation z: ","{:.2f}".format(msg.pose.pose.orientation.z),
                 "/ orientation w: ","{:.2f}".format(msg.pose.pose.orientation.w),
-                print(msg.pose.pose.orientation)
+                
                 )
         #msg.pose.position.z=0
 
