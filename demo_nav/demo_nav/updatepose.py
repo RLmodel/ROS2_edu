@@ -17,16 +17,26 @@ class updatepose(Node):
         self.i =0
 
     def timer_callback(self, msg):
-        print(  "index :",str(self.i), 
+        print(  "index:",str(self.i), 
                 "/ pos.x:","{:.2f}".format(msg.pose.pose.position.x),
                 "/ pos.y:","{:.2f}".format(msg.pose.pose.position.y),
                 "/ ori.z:","{:.2f}".format(msg.pose.pose.orientation.z),
                 "/ ori.w:","{:.2f}".format(msg.pose.pose.orientation.w),
                 )
-        
+        posx = "posx:"+str(msg.pose.pose.position.x)
+        posy = "posy:"+str(msg.pose.pose.position.y)
+        oriz = "oriz:"+str(msg.pose.pose.orientation.z)
+        oriw = "oriz:"+str(msg.pose.pose.orientation.w)
+
         #msg.pose.position.z=0
         msg = String()
-        msg.data = str(self.i)
+        msg.data = str(self.i)+"\n"+posx+"\n"+posy+"\n"+oriz+"\n"+oriw
+        
+                       #+"posy:"+str(msg.pose.pose.position.y)
+                       #+"oriz: "+str(msg.pose.pose.orientation.z)
+                       #+"oriw"+str(msg.pose.pose.orientation.w)
+                       
+        
         self.publisher_.publish(msg)
 
         self.i +=1
