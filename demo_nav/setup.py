@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'get_pose = demo_nav.get_amclpose:main'
+            'get_pose    = demo_nav.get_amclpose:main',
+            'update_pose = demo_nav.updatepose:main',
         ],
     },
 )
