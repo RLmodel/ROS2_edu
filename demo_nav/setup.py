@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'get_pose    = demo_nav.get_amclpose:main',
-            'update_pose = demo_nav.updatepose:main',
+            'update_pose = demo_nav.subpub_pose:main',
         ],
     },
 )
