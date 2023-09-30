@@ -28,14 +28,8 @@ class subpub_pose(Node):
         oriz = "oriz:"+str(msg.pose.pose.orientation.z)
         oriw = "oriz:"+str(msg.pose.pose.orientation.w)
 
-        #msg.pose.position.z=0
         msg = String()
-        msg.data = str(self.i)+"\n"+posx+"\n"+posy+"\n"+oriz+"\n"+oriw
-        
-                       #+"posy:"+str(msg.pose.pose.position.y)
-                       #+"oriz: "+str(msg.pose.pose.orientation.z)
-                       #+"oriw"+str(msg.pose.pose.orientation.w)
-                       
+        msg.data = str(self.i)+"\n"+posx+"\n"+posy+"\n"+oriz+"\n"+oriw    
         
         self.publisher_.publish(msg)
 
