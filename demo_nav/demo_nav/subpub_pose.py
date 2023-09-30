@@ -6,9 +6,9 @@ from geometry_msgs.msg import PoseWithCovarianceStamped
 from rclpy.node import Node
 from std_msgs.msg import String
 
-class updatepose(Node):
+class subpub_pose(Node):
     def __init__(self):
-        super().__init__('poseupdate')
+        super().__init__('subpub_pose')
         self.subscriber = self.create_subscription(PoseWithCovarianceStamped, '/amcl_pose', self.timer_callback, 10)
         self.publisher_ = self.create_publisher(String, '/tracer_pose', 10)
 
@@ -43,7 +43,7 @@ class updatepose(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    posehandle_node = updatepose()
+    posehandle_node = subpub_pose()
 
     try:
         rclpy.spin(posehandle_node)
