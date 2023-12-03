@@ -7,14 +7,14 @@ from rclpy.node import Node
 # Handles string messages
 from std_msgs.msg import String
  
-class MinimalSubscriber(Node):
+class StrSub(Node):
   """
-  Create a subscriber node
+  Create a StrSub node
   """
   def __init__(self):
  
     # Initiate the Node class's constructor and give it a name
-    super().__init__('minimal_subscriber')
+    super().__init__('str_sub')
  
     # The node subscribes to messages of type std_msgs/String, 
     # over a topic named: /addison
@@ -38,11 +38,11 @@ def main(args=None):
   rclpy.init(args=args)
  
   # Create a subscriber
-  minimal_subscriber = MinimalSubscriber()
+  str_sub = StrSub()
  
   # Spin the node so the callback function is called.
   # Pull messages from any topics this node is subscribed to.
-  rclpy.spin(minimal_subscriber)
+  rclpy.spin(str_sub)
  
   # Destroy the node explicitly
   # (optional - otherwise it will be done automatically
