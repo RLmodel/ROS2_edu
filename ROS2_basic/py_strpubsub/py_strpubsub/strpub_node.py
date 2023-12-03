@@ -7,16 +7,16 @@ from rclpy.node import Node
 # Enables usage of the String message type
 from std_msgs.msg import String
  
-class MinimalPublisher(Node):
+class StrPub(Node):
   """
-  Create a MinimalPublisher class, which is a subclass of the Node class.
+  Create a StrPub class, which is a subclass of the Node class.
   """
   def __init__(self):
     """
     Class constructor to set up the node
     """
     # Initiate the Node class's constructor and give it a name
-    super().__init__('minimal_publisher')
+    super().__init__('str_pub')
      
     # Create the publisher. This publisher will publish a String message
     # to the addison topic. The queue size is 10 messages.
@@ -57,15 +57,15 @@ def main(args=None):
   rclpy.init(args=args)
  
   # Create the node
-  minimal_publisher = MinimalPublisher()
+  str_pub = StrPub()
  
   # Spin the node so the callback function is called.
-  rclpy.spin(minimal_publisher)
+  rclpy.spin(str_pub)
  
   # Destroy the node explicitly
   # (optional - otherwise it will be done automatically
   # when the garbage collector destroys the node object)
-  minimal_publisher.destroy_node()
+  str_pub.destroy_node()
  
   # Shutdown the ROS client library for Python
   rclpy.shutdown()
