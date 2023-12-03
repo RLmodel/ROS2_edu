@@ -14,9 +14,11 @@ class getpose(Node):
         self.get_logger().info('==== Pose subscribe start ====\n')
 
     def timer_callback(self, msg):
-        print("position X: ", "{:.2f}".format(msg.pose.pose.position.x),
-                "position Y: ", "{:.2f}".format(msg.pose.pose.position.y),
-                "orientation X: ", "{:.2f}".format(msg.pose.pose.orientation.z)
+        print("position X: ","{:.2f}".format(msg.pose.pose.position.x),
+                "/ position Y: ","{:.2f}".format(msg.pose.pose.position.y),
+                "/ orientation z: ","{:.2f}".format(msg.pose.pose.orientation.z),
+                "/ orientation w: ","{:.2f}".format(msg.pose.pose.orientation.w),
+                
                 )
         #msg.pose.position.z=0
 
