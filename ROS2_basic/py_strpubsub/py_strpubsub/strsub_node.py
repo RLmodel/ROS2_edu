@@ -47,7 +47,7 @@ def main(args=None):
   # Destroy the node explicitly
   # (optional - otherwise it will be done automatically
   # when the garbage collector destroys the node object)
-  minimal_subscriber.destroy_node()
+  str_sub.destroy_node()
    
   # Shutdown the ROS client library for Python
   rclpy.shutdown()
