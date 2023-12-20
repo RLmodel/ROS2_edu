@@ -41,14 +41,16 @@ class ImageSubscriber(Node):
 
     self.twist_publisher = self.create_publisher(Twist, '/cmd_vel', 10)  
     self.create_timer(0.2, self.timer_callback)
+    self.br = CvBridge()
 
   def timer_callback(self):
     msg = Twist()
+    msg.linear.x = 0.5
     msg.angular.z =0.0
-
-
+    self.twist_publisher.publish(msg)
+    
     # Used to convert between ROS and OpenCV images
-    self.br = CvBridge()
+    
    
   def listener_callback(self, data):
     """
