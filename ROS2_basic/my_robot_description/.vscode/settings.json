@@ -1,0 +1,40 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rlmodel/ros2_ws/build/str_pubsub",
+        "/home/rlmodel/ros2_ws/install/str_pubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_twistmsg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_subscan",
+        "/home/rlmodel/ros2_ws/install/py_subscan/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_strpubsup/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_strpubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_scansub",
+        "/home/rlmodel/ros2_ws/install/py_scansub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_pkg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/img_pubsub",
+        "/home/rlmodel/ros2_ws/install/img_pubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/first_pkg",
+        "/home/rlmodel/ros2_ws/install/first_pkg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/cv_test",
+        "/home/rlmodel/ros2_ws/install/cv_test/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rlmodel/ros2_ws/build/str_pubsub",
+        "/home/rlmodel/ros2_ws/install/str_pubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_twistmsg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_subscan",
+        "/home/rlmodel/ros2_ws/install/py_subscan/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_strpubsup/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_strpubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/py_scansub",
+        "/home/rlmodel/ros2_ws/install/py_scansub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/install/py_pkg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/img_pubsub",
+        "/home/rlmodel/ros2_ws/install/img_pubsub/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/first_pkg",
+        "/home/rlmodel/ros2_ws/install/first_pkg/lib/python3.8/site-packages",
+        "/home/rlmodel/ros2_ws/build/cv_test",
+        "/home/rlmodel/ros2_ws/install/cv_test/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
