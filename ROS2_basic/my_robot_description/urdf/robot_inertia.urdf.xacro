@@ -10,19 +10,6 @@
 
     <xacro:include filename="common_properties.xacro"/>
 
-    <!-- <material name="grey">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-    </material>
-    <material name="blue">
-        <color rgba="0.0 0.5 1.0 1.0"/>
-    </material>
-    <material name="green">
-        <color rgba="0.0 0.6 0.0 1.0"/>
-    </material>
-    <material name="white">
-        <color rgba="1.0 1.0 1.0 1.0"/>
-    </material> -->
-
     <link name="base_footprint">
     </link>
 
@@ -34,6 +21,14 @@
             <origin xyz="0.0 0.0 ${base_height / 2.0}" rpy="0.0 0.0 0.0"/>
             <material name="green"/>
         </visual>
+        <collision>
+           <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+            <origin xyz="0.0 0.0 ${base_height / 2.0}" rpy="0.0 0.0 0.0"/>
+        </collision>
+        <xacro:box_inertia m="5.0" l="${base_length}" w="${base_width}" h="${base_height}"
+                           xyz="0 0 ${base_height / 2.0}" rpy="{0 0 0}" />
     </link>
     
     <link name="lidar">
@@ -54,6 +49,8 @@
             </geometry>
             <material name="grey"/>
         </visual>
+        <xacro:cylinder_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}"
+                                xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
     </link>
 
     <link name="right_wheel">
@@ -74,6 +71,9 @@
             </geometry>
             <material name="grey"/>
         </visual>
+        <xacro:sphere_inertia m="0.5" r="${wheel_radius / 2.0}"
+                              xyz="0 0 0" rpy="0 0 0" />
+
     </link>
 
     <joint name="base_lidar_joint" type="fixed">
