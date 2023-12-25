@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="my_robot2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:property name="base_length" value="0.6" />
     <xacro:property name="base_width" value="0.4" />
@@ -8,7 +8,9 @@
     <xacro:property name="wheel_radius" value="0.1" />
     <xacro:property name="wheel_length" value="0.05" />
 
-    <material name="grey">
+    <xacro:include filename="common_properties.xacro"/>
+
+    <!-- <material name="grey">
         <color rgba="0.7 0.7 0.7 1.0"/>
     </material>
     <material name="blue">
@@ -19,7 +21,7 @@
     </material>
     <material name="white">
         <color rgba="1.0 1.0 1.0 1.0"/>
-    </material>
+    </material> -->
 
     <link name="base_footprint">
     </link>
