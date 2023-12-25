@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="6-3_common_properties.xacro" />
+    <xacro:include filename="6-3_mobile_base.xacro" />
+    <xacro:include filename="6-3_mobile_base_gazebo.xacro" />
+
+</robot>
