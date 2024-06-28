@@ -3,7 +3,7 @@ from geometry_msgs.msg import Twist
 from rclpy.node import Node
 
 
-class ConrolUgv(Node):
+class ControlUgv(Node):
     def __init__(self):
         super().__init__('twist_publisher')
         self.twist_publisher = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
@@ -17,7 +17,7 @@ class ConrolUgv(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    move_node = ConrolUgv()
+    move_node = ControlUgv()
     rclpy.spin(move_node)
 
     rclpy.shutdown()
