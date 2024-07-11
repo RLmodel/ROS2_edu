@@ -4,7 +4,7 @@
   <name>py_action_tutorial</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="tge1375@naver.com">kimsooyoung</maintainer>
+  <maintainer email="contact@rlmodel.com">rlmodel</maintainer>
   <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>
